@@ -1,0 +1,9 @@
+{
+  "name": "IHOME Integration",
+  "version": "1.0.0",
+  "description": "Ein benutzerdefiniertes Dashboard für Home Assistant.",
+  "frontend": true,
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@uwe-peter"]
+}

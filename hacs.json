@@ -1,0 +1,8 @@
+{
+  "name": "IHOME Integration",
+  "content_in_root": false,
+  "domains": ["lovelace"],
+  "filename": "custom_components/ihome_themes/www/ihome_themes/dashboard.yaml",
+  "render_readme": true,
+  "zip_release": false
+}
