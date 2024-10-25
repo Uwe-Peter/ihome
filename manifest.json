@@ -1,5 +1,5 @@
 {
-  "name": "IHOME Integration",
+  "name": "Bibliothek",
   "version": "1.0.0",
   "description": "Ein benutzerdefiniertes Dashboard für Home Assistant.",
   "frontend": true,
