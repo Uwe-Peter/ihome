@@ -2,7 +2,7 @@
   "name": "Bibliothek",
   "content_in_root": false,
   "domains": ["lovelace"],
-  "filename": "www/bibliothek/dashboard.yaml",
+  "filename": "bibliothek/dashboard.yaml",
   "render_readme": true,
   "zip_release": false
 }
