@@ -1,9 +1,8 @@
 {
-  "name": "ihome Dashboard",
+  "name": "Bibliothek",
   "content_in_root": false,
-  "category": "dashboard",  # Kategorie für dein Dashboard
-  "version": "1.0.0",
-  "country": "DE",
+  "domains": ["lovelace"],
+  "filename": "bibliothek/dashboard.yaml",  // Hier muss der Pfad korrekt sein
   "render_readme": true,
-  "zip_release": false  
+  "zip_release": false
 }
