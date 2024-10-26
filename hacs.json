@@ -4,5 +4,6 @@
   "domains": ["dashboard"],
   "filename": "bibliothek/dashboard.yaml",
   "render_readme": true,
+  "version": "1.0.0",
   "zip_release": false
 }
