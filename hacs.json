@@ -1,7 +1,7 @@
 {
   "name": "iHome Dashboard",
   "content_in_root": false,
-  "category": "frontend",
+  "category": "frontend",  # Verwende "frontend" für Dashboards
   "country": "DE",
   "homeassistant": "2023.10.0",
   "render_readme": true
