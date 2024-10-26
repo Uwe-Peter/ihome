@@ -1,9 +1,0 @@
-title: iHome Dashboard
-views:
-  - title: Home
-    path: home
-    cards:
-      - type: entities
-        entities:
-          - entity: light.living_room
-          - entity: sensor.temperature
