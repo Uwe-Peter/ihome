@@ -1,0 +1,663 @@
+blueprint:
+  name: Raum
+  description: Schaltet das Zimmerlicht ein, wenn die Bedingungen erfüllt sind.
+  domain: automation
+  input:
+
+    trigger_settings:
+      name: "Trigger *"
+      icon: mdi:gesture-tap
+      collapsed: false
+      input:
+        raum_trigger:
+          name: Auslöser
+          description: Der Auslöser für die Automatisierung (kann jede Art von Entity sein)
+          default: []
+          selector:
+            entity:
+              domain:
+              - binary_sensor
+              - switch
+              - group
+              - schedule
+              - calendar
+              - sensor
+              - smoke
+              - moisture
+              multiple: true  
+
+    time_settings:
+      name: "Zeitsteuerung *"
+      icon: mdi:clock-outline
+      collapsed: true
+      input:
+        weekday:
+          name: Wochentage
+          description: Wochentage die aktiv sein sollen.
+          default:
+          - mon
+          - tue
+          - wed
+          - thu
+          - fri
+          - sat
+          - sun
+          selector:
+            select:
+              options:
+              - label: Montag
+                value: mon
+              - label: Dienstag
+                value: tue
+              - label: Mittwoch
+                value: wed
+              - label: Donnerstag
+                value: thu
+              - label: Freitag
+                value: fri
+              - label: Samstag
+                value: sat
+              - label: Sonntag
+                value: sun
+              custom_value: false
+              multiple: true
+              sort: false
+        sunset_enabled:
+          name: Sonnenuntergang aktivieren
+          description: Soll der Sonnenuntergangs aktiv sein?
+          default: false
+          selector:
+            boolean: {}        
+        sunset_offset:
+          name: Sonnenuntergang Offset (in Minuten)
+          description: Offset für den Sonnenuntergang in Minuten
+          default: 0
+          selector:
+            number:
+              min: -60
+              max: 60
+              step: 1
+              unit_of_measurement: "min"
+
+    bewegungsmelder_settings:
+      name: "Bewegungsmelder *"
+      icon: mdi:motion-sensor
+      collapsed: true
+      input:           
+        raum_bewegungsmelder:
+          name: Bewegungsmelder
+          description: Bewegungsmelder im Raum
+          default: []
+          selector:
+            entity:
+              domain: 
+              - binary_sensor
+              multiple: true
+        raum_bewegungsmelder_entity:
+          name: Bewegungsmelder Entity
+          description: Bewegungsmelder schaltet kein zentrales Licht im Raum
+          default: []
+          selector:
+            entity:
+              domain: 
+              - binary_sensor
+              - media_player              
+              - switch
+              - light
+              - group
+              - schedule
+              - calendar
+              - sensor
+              - smoke
+              - moisture
+              multiple: true                              
+        raum_bewegungsmelder_on:
+          name: Bewegungsmelder Einschaltbedingung
+          description: Was darf nicht eingeschaltet sein, das eingeschaltet wird.
+          default: []      
+          selector:
+            entity:
+              domain:            
+              - binary_sensor
+              - media_player              
+              - switch
+              - light
+              - group
+              - schedule
+              - calendar
+              - sensor
+              - smoke
+              - moisture
+              multiple: true            
+        raum_bewegungsmelder_off:
+          name: Bewegungsmelder Auschaltbedingung
+          description: Was darf nicht eingeschaltet sein Status (off), das ausgeschaltet wird.
+          default: []      
+          selector:
+            entity: 
+              domain:            
+              - binary_sensor
+              - media_player              
+              - switch
+              - light
+              - group
+              - schedule
+              - calendar
+              - sensor
+              - smoke
+              - moisture
+              multiple: true
+        raum_bewegungsmelder_off_1:
+          name: Bewegungsmelder Auschaltbedingung 2
+          description: Was darf nicht ausgeschaltet sein Status (on), das ausgeschaltet wird.
+          default: []      
+          selector:
+            entity: 
+              domain:            
+              - binary_sensor
+              - media_player              
+              - switch
+              - light
+              - group
+              - schedule
+              - calendar
+              - sensor
+              - smoke
+              - moisture
+              multiple: true                           
+        raum_bewegungsmelder_sonnenuntergang_aktiv:
+          name: Sonnenuntergang aktivieren
+          description: Soll der Sonnenuntergangs aktiv sein?
+          default: false
+          selector:
+            boolean: {}        
+        raum_bewegungsmelder_sonnenuntergang_offset:
+          name: Sonnenuntergang Offset (in Minuten)
+          description: Offset für den Sonnenuntergang in Minuten
+          default: 0
+          selector:
+            number:
+              min: -60
+              max: 60
+              step: 1
+              unit_of_measurement: "min"
+
+    lichtschalter_settings:
+      name: "Lichtschalter *"
+      icon: mdi:light-switch
+      collapsed: true
+      input:           
+        raum_lichtschalter:
+          name: Lichtschalter
+          description: Lichtschalter im Raum
+          default: []
+          selector:
+            entity:
+              domain: light
+        raum_lichtschalter_on:
+          name: Lichtschalter Einschaltbedingung
+          description: Was darf nicht eingeschaltet sein, das eingeschaltet wird.
+          default: []      
+          selector:
+            entity: {}
+        raum_lichtschalter_off:
+          name: Lichtschalter Auschaltbedingung
+          description: Was darf nicht eingeschaltet sein, das ausgeschaltet wird.
+          default: []      
+          selector:
+            entity: {}
+        raum_lichtschalter_sonnenuntergang_aktiv:
+          name: Sonnenuntergang aktivieren
+          description: Soll der Sonnenuntergangs aktiv sein?
+          default: false
+          selector:
+            boolean: {}        
+        raum_lichtschalter_sonnenuntergang_offset:
+          name: Sonnenuntergang Offset (in Minuten)
+          description: Offset für den Sonnenuntergang in Minuten
+          default: 0
+          selector:
+            number:
+              min: -60
+              max: 60
+              step: 1
+              unit_of_measurement: "min"
+
+    media_player_settings:
+      name: "Mediaplayer *"
+      icon: mdi:television-classic
+      collapsed: true
+      input:
+        raum_media_player_off:
+          name: Mediaplayer ausschalten im Raum
+          description: Media Player der ausgeschaltet werden soll.
+          default: []
+          selector:
+            entity:
+              domain:
+              - media_player
+              multiple: true      
+        raum_media_player_stopp:
+          name: Mediaplayer stoppen/pausieren im Raum
+          description: Media Player der gestoppt oder pausiert werden soll.
+          default: []
+          selector:
+            entity:
+              domain:
+              - media_player
+              multiple: true
+        raum_media_player_sonnenuntergang_aktiv:
+          name: Sonnenuntergang aktivieren
+          description: Soll der Sonnenuntergangs aktiv sein?
+          default: false
+          selector:
+            boolean: {}        
+        raum_media_player_sonnenuntergang_offset:
+          name: Sonnenuntergang Offset (in Minuten)
+          description: Offset für den Sonnenuntergang in Minuten
+          default: 0
+          selector:
+            number:
+              min: -60
+              max: 60
+              step: 1
+              unit_of_measurement: "min"
+
+    steckdosen_settings:
+      name: "Steckdosen *"
+      icon: mdi:power-socket-de
+      collapsed: true
+      input:
+        raum_steckdosen_gruppe_1:
+          name: Steckdosen Gruppe 1 im Raum
+          description: Steckdosen der Gruppe 1 die eingeschaltet werden sollen
+          default: []
+          selector:
+            entity:
+              domain:
+              - switch  
+              multiple: true  
+        raum_steckdosen_gruppe_2:
+          name: Steckdosen Gruppe 2 im Raum
+          description: Steckdosen der Gruppe 2 die eingeschaltet werden sollen
+          default: []
+          selector:
+            entity:
+              domain:
+              - switch  
+              multiple: true  
+        raum_steckdosen_sonnenuntergang_aktiv:
+          name: Sonnenuntergang aktivieren
+          description: Soll der Sonnenuntergangs aktiv sein?
+          default: false
+          selector:
+            boolean: {}        
+        raum_steckdosen_sonnenuntergang_offset:
+          name: Sonnenuntergang Offset (in Minuten)
+          description: Offset für den Sonnenuntergang in Minuten
+          default: 0
+          selector:
+            number:
+              min: -60
+              max: 60
+              step: 1
+              unit_of_measurement: "min"
+
+    licht_settings_options:
+      name: "Licht Steuerung *"
+      icon: mdi:lightbulb-on-outline
+      collapsed: true
+      input:
+        raum_licht_gruppe_1:
+          name: Lichter Gruppe 1
+          description: Lichter der Gruppe 1 im Raum
+          default: []
+          selector:
+            entity:
+              domain: 
+              - light
+              multiple: true
+        raum_licht_gruppe_2:
+          name: Lichter Gruppe 2
+          description: Lichter der Gruppe 2 im Raum
+          default: []
+          selector:
+            entity:
+              domain: 
+              - light
+              multiple: true
+        raum_licht_transition:
+          name: "Licht Übergangszeit"
+          description: "Die Zeit in Sekunden für den Übergang bei Lichtänderungen."
+          default: 3
+          selector:
+            number:
+              min: 0.0
+              max: 60.0
+              unit_of_measurement: sekunden
+              mode: slider
+              step: 1.0
+        raum_licht_rgb_color:
+          name: "Lichtfarbe"
+          description: "Farbe der Lichter"
+          default:
+            - 255
+            - 191
+            - 140
+          selector:
+            color_rgb: {}
+        raum_licht_brightness_pct:
+          name: "Standardhelligkeit"
+          description: "Die Standardhelligkeit in Prozent, die verwendet werden soll, wenn kein Licht eingeschaltet ist."
+          default: 70  
+          selector:
+            number:
+              min: 0
+              max: 100
+              step: 1              
+              unit_of_measurement: "%"
+              mode: slider 
+        raum_licht_sonnenuntergang_aktiv:
+          name: Sonnenuntergang aktivieren
+          description: Soll der Sonnenuntergangs aktiv sein?
+          default: false
+          selector:
+            boolean: {}        
+        raum_licht_sonnenuntergang_offset:
+          name: Sonnenuntergang Offset (in Minuten)
+          description: Offset für den Sonnenuntergang in Minuten
+          default: 0
+          selector:
+            number:
+              min: -60
+              max: 60
+              step: 1
+              unit_of_measurement: "min"
+
+  source_url: https://gist.github.com/Uwe-Peter/1660a407f2699d8a85f5eda06c975c86
+
+mode: restart
+max_exceeded: silent 
+
+
+variables:
+
+  weekday: !input weekday
+  raum_trigger: !input raum_trigger
+
+  sunset_enabled: !input sunset_enabled
+  sunset_offset: !input sunset_offset
+
+  raum_bewegungsmelder: !input raum_bewegungsmelder
+  raum_bewegungsmelder_entity: !input raum_bewegungsmelder_entity
+  raum_bewegungsmelder_on: !input raum_bewegungsmelder_on
+  raum_bewegungsmelder_off: !input raum_bewegungsmelder_off
+  raum_bewegungsmelder_off_1: !input raum_bewegungsmelder_off_1
+  raum_bewegungsmelder_sonnenuntergang_aktiv: !input raum_bewegungsmelder_sonnenuntergang_aktiv
+  raum_bewegungsmelder_sonnenuntergang_offset: !input raum_bewegungsmelder_sonnenuntergang_offset
+
+  raum_lichtschalter: !input raum_lichtschalter
+  raum_lichtschalter_on: !input raum_lichtschalter_on
+  raum_lichtschalter_off: !input raum_lichtschalter_off
+  raum_lichtschalter_sonnenuntergang_aktiv: !input raum_lichtschalter_sonnenuntergang_aktiv
+  raum_lichtschalter_sonnenuntergang_offset: !input raum_lichtschalter_sonnenuntergang_offset
+
+  raum_media_player_off: !input raum_media_player_off    
+  raum_media_player_stopp: !input raum_media_player_stopp
+  raum_media_player_sonnenuntergang_aktiv: !input raum_media_player_sonnenuntergang_aktiv
+  raum_media_player_sonnenuntergang_offset: !input raum_media_player_sonnenuntergang_offset
+
+  raum_steckdosen_gruppe_1: !input raum_steckdosen_gruppe_1
+  raum_steckdosen_gruppe_2: !input raum_steckdosen_gruppe_2
+  raum_steckdosen_sonnenuntergang_aktiv: !input raum_steckdosen_sonnenuntergang_aktiv
+  raum_steckdosen_sonnenuntergang_offset: !input raum_steckdosen_sonnenuntergang_offset
+
+  raum_licht_gruppe_1: !input raum_licht_gruppe_1
+  raum_licht_gruppe_2: !input raum_licht_gruppe_2
+  raum_licht_transition: !input raum_licht_transition
+  raum_licht_rgb_color: !input raum_licht_rgb_color
+  raum_licht_brightness_pct: !input raum_licht_brightness_pct
+  raum_licht_sonnenuntergang_aktiv: !input raum_licht_sonnenuntergang_aktiv
+  raum_licht_sonnenuntergang_offset: !input raum_licht_sonnenuntergang_offset
+  raum_licht_gruppe_1_on:  "{{ expand( raum_licht_gruppe_1 )  | selectattr('state', 'eq', 'on') | map(attribute='entity_id') | list }}"
+  raum_licht_gruppe_1_off: "{{ expand( raum_licht_gruppe_1 )  | selectattr('state', 'eq', 'off') | map(attribute='entity_id') | list }}"
+  raum_licht_gruppe_2_on:  "{{ expand( raum_licht_gruppe_2 )  | selectattr('state', 'eq', 'on') | map(attribute='entity_id') | list }}"
+  raum_licht_gruppe_2_off: "{{ expand( raum_licht_gruppe_2 )  | selectattr('state', 'eq', 'off') | map(attribute='entity_id') | list }}"
+  current_time: "{{ now().hour }}"  
+  brightness_based_on_time: >
+    {% if current_time >= 6 and current_time < 12 %}
+      {{ raum_licht_brightness_pct | int }}
+    {% elif current_time >= 12 and current_time < 18 %}
+      {{ raum_licht_brightness_pct | int }}
+    {% elif current_time >= 18 and current_time < 21 %}
+      {{ (raum_licht_brightness_pct | int * 0.75) | round(0) }}
+    {% else %}
+      {{ (raum_licht_brightness_pct | int * 0.5) | round(0) }}
+    {% endif %}
+  
+  raum_licht_brightness_pct_1: "{{ state_attr(raum_licht_gruppe_1_on | first, 'brightness') if (raum_licht_gruppe_1_on | length > 0) else (brightness_based_on_time / 100 * 255) }}"
+  raum_licht_rgb_color_1: "{{ state_attr(raum_licht_gruppe_1_on | first, 'rgb_color') if (raum_licht_gruppe_1_on | length > 0) else raum_licht_rgb_color }}"
+  raum_licht_brightness_pct_2: "{{ state_attr(raum_licht_gruppe_2_on | first, 'brightness') if (raum_licht_gruppe_2_on | length > 0) else (brightness_based_on_time / 100 * 255) }}"
+  raum_licht_rgb_color_2: "{{ state_attr(raum_licht_gruppe_2_on | first, 'rgb_color') if (raum_licht_gruppe_2_on | length > 0) else raum_licht_rgb_color }}"
+
+trigger:
+  - platform: state
+    entity_id: !input raum_trigger
+
+  - platform: sun
+    event: sunset
+    offset: !input sunset_offset
+    enabled: !input sunset_enabled
+
+condition: []
+action:
+
+  - choose:      
+    - conditions:
+      - condition: template
+        value_template: "{{ weekday is defined and weekday | length > 0 }}"
+      sequence:
+      - choose:
+        - conditions:
+          - condition: template
+            value_template: "{{ (trigger.entity_id is defined) and (raum_trigger | length > 0) and (states[trigger.entity_id] is not none) and (states[trigger.entity_id].state | length > 0) and (states[trigger.entity_id].state not in ['unavailable', 'unknown']) }}"
+          sequence:
+          - choose:
+            - conditions:
+              - condition: template
+                value_template: "{{ raum_bewegungsmelder is defined and raum_bewegungsmelder | length > 0 }}"
+              - condition: template
+                value_template: "{{ raum_bewegungsmelder_entity is not defined or raum_bewegungsmelder_entity|length == 0 }}"
+              sequence:
+              - parallel:
+                - choose:
+                  - conditions:
+                    - condition: template
+                      value_template: "{{ expand(raum_bewegungsmelder) | selectattr('state', 'eq', 'on') | list | length > 0 }}"
+                    - condition: template
+                      value_template: "{{ not sunset_enabled and not raum_bewegungsmelder_sonnenuntergang_aktiv or (is_state('sun.sun', 'below_horizon')) }}"
+                    - condition: time
+                      before: "00:00:00"
+                    - condition: or  
+                      conditions:                                               
+                      - condition: template
+                        value_template: "{{ raum_bewegungsmelder_on is not defined or raum_bewegungsmelder_on|length == 0 or expand(raum_bewegungsmelder_on) | selectattr('state', 'in', ['on', 'Charging']) | list | length == 0 }}"
+             
+                    sequence:
+                    - parallel:
+                      - choose:                                                     
+                        - conditions:                                                 
+                          - condition: template
+                            value_template: "{{ expand(raum_licht_gruppe_1) | selectattr('state', 'eq', 'off') | list | length > 0 }}"
+                          - condition: template
+                            value_template: "{{ expand(raum_licht_gruppe_2) | selectattr('state', 'eq', 'off') | list | length > 0 }}"                          
+                          sequence:                    
+                          - action: light.turn_on
+                            data:
+                              rgb_color: "{{ raum_licht_rgb_color }}"  
+                              transition: 1                   
+                            target:
+                              entity_id: "{{ raum_licht_gruppe_1_off + raum_licht_gruppe_2_off }}"  
+                          - delay: "00:00:01"  
+                          - action: light.turn_on
+                            data:
+                              brightness: "{{ raum_licht_brightness_pct }}" 
+                              transition: "{{ raum_licht_transition }}"                      
+                            target:
+                              entity_id: "{{ raum_licht_gruppe_1_off + raum_licht_gruppe_2_off }}"
+                      - choose:                               
+                        - conditions:
+                          - condition: template
+                            value_template: "{{ expand(raum_licht_gruppe_2) | selectattr('state', 'eq', 'on') | list | length > 0 }}"
+                          - condition: template
+                            value_template: "{{ expand(raum_licht_gruppe_1) | selectattr('state', 'eq', 'off') | list | length > 0 }}"              
+                          sequence:
+                          - action: light.turn_on
+                            data:
+                              rgb_color: "{{ raum_licht_rgb_color_2 }}"  
+                              transition: 1                     
+                            target:
+                              entity_id: "{{ raum_licht_gruppe_1_off }}"  
+                          - delay: "00:00:01" 
+                          - action: light.turn_on
+                            data:
+                              brightness: "{{ raum_licht_brightness_pct_2 }}"  
+                              transition: "{{ raum_licht_transition }}"                     
+                            target:
+                              entity_id: "{{ raum_licht_gruppe_1_off }}"
+                      - choose:                              
+                        - conditions:
+                          - condition: template
+                            value_template: "{{ expand(raum_licht_gruppe_1) | selectattr('state', 'eq', 'on') | list | length > 0 }}"
+                          - condition: template
+                            value_template: "{{ expand(raum_licht_gruppe_2) | selectattr('state', 'eq', 'off') | list | length > 0 }}"              
+                          sequence:
+                          - action: light.turn_on
+                            data:
+                              rgb_color: "{{ raum_licht_rgb_color_1 }}"  
+                              transition: 1                     
+                            target:
+                              entity_id: "{{ raum_licht_gruppe_2_off }}"  
+                          - delay: "00:00:01"  
+                          - action: light.turn_on
+                            data:
+                              brightness: "{{ raum_licht_brightness_pct_1 }}"  
+                              transition: "{{ raum_licht_transition }}"                     
+                            target:
+                              entity_id: "{{ raum_licht_gruppe_2_off }}"                                                         
+
+                - choose:
+                  - conditions:            
+                    - condition: template
+                      value_template: "{{ expand(raum_bewegungsmelder) | selectattr('state', 'eq', 'off') | list | length > 0 }}" 
+                    - condition: and  
+                      conditions:                                               
+                      - condition: template
+                        value_template: "{{ raum_bewegungsmelder_off is not defined or raum_bewegungsmelder_off|length == 0 or expand(raum_bewegungsmelder_off) | selectattr('state', 'in', ['on', 'Charging']) | list | length == 0 }}"
+                      - condition: template
+                        value_template: "{{ raum_bewegungsmelder_off_1 is not defined or raum_bewegungsmelder_off_1|length == 0 or expand(raum_bewegungsmelder_off_1) | selectattr('state', 'in', ['off', 'Not Charging']) | list | length == 0 }}"                                                                
+                    sequence:
+                    - choose:
+                      - conditions:
+                        - condition: or  
+                          conditions:                  
+                          - condition: template
+                            value_template: "{{ expand(raum_licht_gruppe_1_on) | selectattr('state', 'eq', 'on') | list | length > 0 }}" 
+                          - condition: template
+                            value_template: "{{ expand(raum_licht_gruppe_2_on) | selectattr('state', 'eq', 'on') | list | length > 0 }}"             
+                        sequence:
+                        - parallel:
+                          - action: light.turn_off
+                            data:
+                              transition: "{{ raum_licht_transition }}"                     
+                            target:
+                              entity_id: "{{ raum_licht_gruppe_1_on }}"  
+                          - action: light.turn_off
+                            data:
+                              transition: "{{ raum_licht_transition }}"                      
+                            target:
+                              entity_id: "{{ raum_licht_gruppe_2_on }}"   
+
+          - choose:
+            - conditions:
+              - condition: template
+                value_template: "{{ raum_bewegungsmelder is defined and raum_bewegungsmelder | length > 0 }}"
+              - condition: template
+                value_template: "{{ raum_bewegungsmelder_entity is defined and raum_bewegungsmelder_entity|length > 0 }}"
+              sequence:
+              - parallel:
+                - choose:
+                  - conditions:
+                    - condition: template
+                      value_template: "{{ expand(raum_bewegungsmelder) | selectattr('state', 'eq', 'on') | list | length > 0 }}"
+                    - condition: template
+                      value_template: "{{ not sunset_enabled and not raum_bewegungsmelder_sonnenuntergang_aktiv or (is_state('sun.sun', 'below_horizon')) }}"
+                    - condition: time
+                      before: "00:00:00"
+                    - condition: or  
+                      conditions:                                               
+                      - condition: template
+                        value_template: "{{ raum_bewegungsmelder_on is not defined or raum_bewegungsmelder_on|length == 0 or expand(raum_bewegungsmelder_on) | selectattr('state', 'in', ['on', 'Charging']) | list | length == 0 }}" 
+
+                    sequence:
+                    - parallel:
+                      - choose:                                                     
+
+                        - conditions: 
+                          - condition: template
+                            value_template: "{{ expand(raum_bewegungsmelder_entity) | selectattr('domain', 'eq', 'light') | list | length > 0 }}"
+                          sequence:
+                          - service: light.turn_on
+                            target:
+                              entity_id: "{{ expand(raum_bewegungsmelder_entity) | selectattr('domain', 'eq', 'light') | map(attribute='entity_id') | list }}"
+                      - choose: 
+                        - conditions: 
+                          - condition: template
+                            value_template: "{{ expand(raum_bewegungsmelder_entity) | selectattr('domain', 'eq', 'switch') | list | length > 0 }}"
+                          sequence:
+                          - service: switch.turn_on
+                            target:
+                              entity_id: "{{ expand(raum_bewegungsmelder_entity) | selectattr('domain', 'eq', 'switch') | map(attribute='entity_id') | list }}"
+
+
+
+                      - choose:
+                        - conditions:            
+      
+                          - condition: and  
+                            conditions:                                               
+                            - condition: template
+                              value_template: "{{ raum_bewegungsmelder_off is not defined or raum_bewegungsmelder_off|length == 0 or expand(raum_bewegungsmelder_off) | selectattr('state', 'in', ['on', 'Charging']) | list | length == 0 }}"
+                            - condition: template
+                              value_template: "{{ raum_bewegungsmelder_off_1 is not defined or raum_bewegungsmelder_off_1|length == 0 or expand(raum_bewegungsmelder_off_1) | selectattr('state', 'in', ['off', 'Not Charging']) | list | length == 0 }}"                                                                
+                          sequence:
+                          - wait_for_trigger:                                     # Warte auf den Trigger Strommessung für das Ende der Strommessung.
+                            - platform: state
+                              entity_id: !input raum_bewegungsmelder
+                              to: "off"                    
+                          - choose:
+                            - conditions:
+                              - condition: or  
+                                conditions:                  
+                                - condition: template
+                                  value_template: "{{ expand(raum_bewegungsmelder_entity) | selectattr('state', 'eq', 'on') | list | length > 0 }}" 
+                
+                              sequence:
+                              - parallel:
+                                - choose:                               
+                                  - conditions: 
+                                    - condition: template
+                                      value_template: "{{ expand(raum_bewegungsmelder_entity) | selectattr('domain', 'eq', 'light') | list | length > 0 }}"
+                                    sequence:
+                                    - service: light.turn_off
+                                      target:
+                                        entity_id: "{{ expand(raum_bewegungsmelder_entity) | selectattr('domain', 'eq', 'light') | map(attribute='entity_id') | list }}"
+                                - choose: 
+                                  - conditions: 
+                                    - condition: template
+                                      value_template: "{{ expand(raum_bewegungsmelder_entity) | selectattr('domain', 'eq', 'switch') | list | length > 0 }}"
+                                    sequence:
+                                    - service: switch.turn_off
+                                      target:
+                                        entity_id: "{{ expand(raum_bewegungsmelder_entity) | selectattr('domain', 'eq', 'switch') | map(attribute='entity_id') | list }}"
+  
