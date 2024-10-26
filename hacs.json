@@ -1,8 +1,9 @@
 {
-  "name": "Bibliothek",
+  "name": "ihome Dashboard",
   "content_in_root": false,
-  "domains": ["dashboard"],
-  "filename": "bibliothek/dashboard.yaml",  
+  "category": "dashboard",  # Kategorie für dein Dashboard
+  "version": "1.0.0",
+  "country": "DE",
   "render_readme": true,
-  "zip_release": false
+  "zip_release": false  
 }
