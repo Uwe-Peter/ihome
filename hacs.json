@@ -1,7 +1,9 @@
 {
-  "name": "iHome Dashboard",
-  "category": "dashboard",  # Korrekte Kategorie für dein Dashboard
-  "version": "1.0.0",
+  "name": "ihome Dashboard",
+  "content_in_root": false,
+  "filename": "dashboards/ihome/dashboard.yaml",
+  "category": "dashboard",
   "country": "DE",
+  "homeassistant": "2023.10.0",
   "render_readme": true
 }
