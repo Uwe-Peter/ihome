@@ -1,10 +1,10 @@
-{
-  "name": "ihome Dashboard",
-  "content_in_root": false,
-  "domains": [ihome],
-  "filename": "www/lovelace/ihome/dashboard.yaml",
-  "country": "DE",
-  "homeassistant": "2023.10.0",
-  "render_readme": true,
-  "version": "1.0.0"
-}
+title: ihome Dashboard
+views:
+  - title: Home
+    path: home
+    cards:
+      - type: entities
+        entities:
+          - entity: light.living_room
+          - entity: sensor.temperature
+
