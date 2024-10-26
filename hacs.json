@@ -1,8 +1,8 @@
 {
-  "name": "iHome Dashboard",
+  "name": "ihome Dashboard",
   "content_in_root": false,
   "domains": ["lovelace"],
-  "filename": "dashboards/dashboard.yaml",
+  "filename": "www/lovelace/ihome/dashboard.yaml",
   "country": "DE",
   "homeassistant": "2023.10.0",
   "render_readme": true,
