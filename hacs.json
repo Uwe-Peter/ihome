@@ -1,9 +1,8 @@
 {
-  "name": "iHome Dashboard",
+  "name": "Bibliothek",
   "content_in_root": false,
-  "domains": [],
-  "country": "DE",
-  "homeassistant": "2023.10.0",
+  "domains": ["lovelace"],
+  "filename": "bibliothek/dashboard.yaml",  // Hier muss der Pfad korrekt sein
   "render_readme": true,
-  "version": "1.0.0"
+  "zip_release": false
 }
