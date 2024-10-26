@@ -1,1 +1,11 @@
-
+{
+  "domain": "ihome",
+  "name": "Bibliothek",
+  "version": "1.0.0",
+  "description": "Ein benutzerdefiniertes Dashboard für Home Assistant.",
+  "documentation": "https://github.com/dein_github_user/ihome",  // URL zur Dokumentation
+  "frontend": true,
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": ["@uwe-peter"]
+}
