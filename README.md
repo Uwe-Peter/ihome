@@ -16,4 +16,4 @@ Dies ist ein benutzerdefiniertes Dashboard für Home Assistant. Es enthält Bild
 
 ## Nutzung
 
-Nutze den Pfad `/local/smarthome_dashboard/images/background.png` oder `/local/smarthome_dashboard/mp3/musik.mp3`, um auf die Dateien zuzugreifen.
+Nutze den Pfad `/local/community/ihome/bibliothek/images/background.png` oder `/local/community/ihome/bibliothek/mp3/musik.mp3`, um auf die Dateien zuzugreifen.
