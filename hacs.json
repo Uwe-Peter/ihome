@@ -1,8 +1,8 @@
 {
   "name": "Bibliothek",
   "content_in_root": false,
-  "domains": ["lovelace"],
-  "filename": "bibliothek/dashboard.yaml",  // Hier muss der Pfad korrekt sein
+  "domains": ["dashboard"],
+  "filename": "bibliothek/dashboard.yaml",
   "render_readme": true,
   "zip_release": false
 }
