@@ -1,7 +1,7 @@
 {
   "name": "iHome Dashboard",
   "content_in_root": false,
-  "filename": "ihome/dashboard.yaml",
+  "filename": "www/ihome/dashboard.yaml",
   "category": "frontend",
   "country": "DE",
   "homeassistant": "2023.10.0",
