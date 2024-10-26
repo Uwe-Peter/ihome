@@ -2,7 +2,7 @@
   "name": "iHome Dashboard",
   "content_in_root": false,
   "domains": ["lovelace"],
-  "filename": "bibliothek/dashboard.yaml",
+  "filename": "dashboards/dashboard.yaml",
   "country": "DE",
   "homeassistant": "2023.10.0",
   "render_readme": true,
