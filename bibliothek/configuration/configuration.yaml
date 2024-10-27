@@ -1,0 +1,50 @@
+# Lädt eine Reihe von Standard-Integrationen. Nicht entfernen!!!!!!!.
+default_config:
+
+# Automatisches Löschen der Logs und in welchem Rythmus  
+recorder:
+  auto_purge: true
+  purge_keep_days: 1  
+
+# zha Automatische-Updates je nach Provider
+zha:
+  zigpy_config:
+    ota:
+      #otau_directory: /config/zigpy_ota  #/path/to/your/ota/folder  # Verwenden Sie .ota-Dateien, um alles andere zu aktualisieren    
+      extra_providers: [{'type': 'ikea'},{'type': 'ledvance'},{'type': 'salus'},{'type': 'inovelli'},{'type': 'thirdreality'}] # Auto update    
+ 
+# Laden von Frontend-Themen aus dem Ordner themes
+frontend:
+  themes: !include_dir_merge_named themes
+
+
+# Eintrag/Änderungen in der configuration.yaml
+homeassistant:
+  allowlist_external_dirs:
+    - /config/sensor
+    - /config/template
+    
+sensor: !include_dir_list sensor
+template: !include_dir_list template
+
+group: !include_dir_named group/
+script: !include scripts.yaml
+script mine: !include_dir_list script/
+
+automation: !include automations.yaml
+automation mine: !include_dir_list automation/
+
+scene: !include scenes.yaml
+scene mine: !include_dir_list scene/
+
+light: !include_dir_merge_list light/
+
+switch: !include_dir_merge_list switch/
+
+input_number: !include_dir_named input_number/
+input_boolean: !include_dir_named input_boolean/
+input_select: !include_dir_named input_select/
+input_datetime: !include_dir_named input_datetime/
+input_text: !include_dir_named input_text/
+timer: !include_dir_named timer/
+
