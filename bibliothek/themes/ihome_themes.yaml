@@ -1,0 +1,1271 @@
+##########################################
+
+ihome Black Blue:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/color/blue.jpg") fixed'
+  ihome-ha-card-header-color: "#009bb5"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#009bb5"
+  ihome-light-primary-color: "#5ed1eb"
+  ihome-primary-background-color: "#0c0c0c"
+  ihome-divider-color: "#2c2c2c"
+  ihome-disabled-color: "#393939"
+  ihome-primary-text-color: "#e5e5e5"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(25, 25, 25, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border-radius)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-primary-background-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)
+
+##########################################
+
+ihome Dark Blue:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/color/blue.jpg") fixed'
+  ihome-ha-card-header-color: "#009bb5"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#009bb5"
+  ihome-light-primary-color: "#5ed1eb"
+  ihome-primary-background-color: "#1D1B1E"
+  ihome-divider-color: "#37373D"
+  ihome-disabled-color: "#666666"
+  ihome-primary-text-color: "#e5e5e5"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(42, 40, 45, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-light-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben# Cards colors
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-primary-background-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)  
+
+##########################################
+
+ihome Light Blue:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/color/blue.jpg") fixed'
+  ihome-ha-card-header-color: "#009bb5"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#009bb5"
+  ihome-light-primary-color: "#5ed1eb"
+  ihome-primary-background-color: "#f2f2f2"
+  ihome-divider-color: "#ababab"
+  ihome-disabled-color: "#ababab"
+  ihome-primary-text-color: "#7f7f7f"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(255, 255, 255, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border-radius)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-disabled-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)
+
+##########################################
+
+ihome Black Blue Glass:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/color/blue.jpg") fixed'
+  ihome-ha-card-header-color: "#009bb5"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#009bb5"
+  ihome-light-primary-color: "#5ed1eb"
+  ihome-primary-background-color: "#0c0c0c"
+  ihome-divider-color: "#009bb5"
+  ihome-disabled-color: "#5b5b5b"
+  ihome-primary-text-color: "#e5e5e5"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(100, 100, 100, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border-radius)
+  ha-card-header-color: var(--ihome-primary-color)
+  # Leget die Hintergründe in den Ordner config/www/images/backgrounds 
+  lovelace-background: var(--ihome-lovelace-background)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-light-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-switch-on-color: var(--ihome-state-switch-on-color)
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-primary-background-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  ha-card-border-width: var(--ihome-ha-card-border-width)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)
+
+##########################################
+
+ihome Black Blue Image:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/images/blue-kachel.jpg") fixed'
+  ihome-ha-card-header-color: "#009bb5"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#009bb5"
+  ihome-light-primary-color: "#5ed1eb"
+  ihome-primary-background-color: "#0c0c0c"
+  ihome-divider-color: "#009bb5"
+  ihome-disabled-color: "#5b5b5b"
+  ihome-primary-text-color: "#e5e5e5"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(100, 100, 100, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border-radius)
+  ha-card-header-color: var(--ihome-ha-card-header-color)
+  # Leget die Hintergründe in den Ordner config/www/images/backgrounds 
+  lovelace-background: var(--ihome-lovelace-background)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-light-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-switch-on-color: var(--ihome-state-switch-on-color)
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-primary-background-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  ha-card-border-width: var(--ihome-ha-card-border-width)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)
+
+##########################################
+
+ihome Black Yellow:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/color/yellow.jpg") fixed'
+  ihome-ha-card-header-color: "#d6a245"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#d6a245"
+  ihome-light-primary-color: "#ffd979"
+  ihome-primary-background-color: "#0c0c0c"
+  ihome-divider-color: "#2c2c2c"
+  ihome-disabled-color: "#393939"
+  ihome-primary-text-color: "#e5e5e5"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(25, 25, 25, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border-radius)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-primary-background-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)
+
+##########################################
+
+ihome Dark Yellow:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/color/yellow.jpg") fixed'
+  ihome-ha-card-header-color: "#d6a245"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#d6a245"
+  ihome-light-primary-color: "#ffd979"
+  ihome-primary-background-color: "#1D1B1E"
+  ihome-divider-color: "#37373D"
+  ihome-disabled-color: "#666666"
+  ihome-primary-text-color: "#e5e5e5"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(42, 40, 45, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-light-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben# Cards colors
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-primary-background-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)  
+
+##########################################
+
+ihome Light Yellow:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/color/yellow.jpg") fixed'
+  ihome-ha-card-header-color: "#d6a245"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#d6a245"
+  ihome-light-primary-color: "#ffd979"
+  ihome-primary-background-color: "#f2f2f2"
+  ihome-divider-color: "#ababab"
+  ihome-disabled-color: "#ababab"
+  ihome-primary-text-color: "#7f7f7f"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(255, 255, 255, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border-radius)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-disabled-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)
+
+##########################################
+
+ihome Black Yellow Glass:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/color/yellow.jpg") fixed'
+  ihome-ha-card-header-color: "#d6a245"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#d6a245"
+  ihome-light-primary-color: "#ffd979"
+  ihome-primary-background-color: "#0c0c0c"
+  ihome-divider-color: "#d6a245"
+  ihome-disabled-color: "#5b5b5b"
+  ihome-primary-text-color: "#e5e5e5"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(100, 100, 100, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border-radius)
+  ha-card-header-color: var(--ihome-primary-color)
+  # Leget die Hintergründe in den Ordner config/www/images/backgrounds 
+  lovelace-background: var(--ihome-lovelace-background)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-light-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-switch-on-color: var(--ihome-state-switch-on-color)
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-primary-background-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  ha-card-border-width: var(--ihome-ha-card-border-width)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)
+
+##########################################
+
+ihome Black Yellow Image:
+
+  ihome-lovelace-background: 'center / cover no-repeat url("/local/community/ihome/bibliothek/backgrounds/images/yellow-kachel.jpg") fixed'
+  ihome-ha-card-header-color: "#d6a245"
+  ihome-ha-card-border-radius: 8px
+  ihome-primary-color: "#d6a245"
+  ihome-light-primary-color: "#ffd979"
+  ihome-primary-background-color: "#0c0c0c"
+  ihome-divider-color: "#d6a245"
+  ihome-disabled-color: "#5b5b5b"
+  ihome-primary-text-color: "#e5e5e5"
+  ihome-text-primary-color: "#E5E5E5"
+  ihome-state-switch-on-color: "#00C44E"
+  ihome-mini-media-player-progress-height: 8px
+  ihome-ha-card-background: "rgba(100, 100, 100, 0.3)"
+  ihome-ha-card-box-shadow: '3px 3px 3px 0px rgba(0,0,0,0.4)'
+  ihome-ha-card-border-width: 0
+
+  # Ändert den Wert unter 8px auf 0px, um die abgerundeten Ecken zu entfernen
+  ha-card-border-radius: var(--ihome-ha-card-border-radius)
+  ha-card-header-color: var(--ihome-primary-color)
+  # Leget die Hintergründe in den Ordner config/www/images/backgrounds 
+  lovelace-background: var(--ihome-lovelace-background)
+  # Hauptfarben
+  primary-color: var(--ihome-primary-color)
+  light-primary-color: var(--ihome-light-primary-color)
+  graph-color: var(--ihome-primary-color)
+  primary-background-color: var(--ihome-primary-background-color)
+  secondary-background-color: var(--ihome-primary-background-color)
+  divider-color: var(--ihome-divider-color)
+  disabled-color: var(--ihome-disabled-color)
+  # Textfarben
+  primary-text-color: var(--ihome-primary-text-color)
+  secondary-text-color: var(--ihome-disabled-color)
+  text-primary-color: var(--ihome-text-primary-color)
+  disabled-text-color: var(--ihome-disabled-color)
+  text-on-state-color: var(--ihome-ha-card-background)
+  # Farben der Seitenleiste
+  sidebar-icon-color: var(--ihome-primary-color)
+  sidebar-text-color: var(--ihome-primary-text-color)
+  sidebar-selected-background-color: var(--ihome-primary-background-color)
+  sidebar-selected-icon-color: var(--ihome-light-primary-color)
+  sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+  # Farben der Icons
+  state-switch-on-color: var(--ihome-state-switch-on-color)
+  state-icon-color: var(--ihome-disabled-color)
+  state-icon-active-color: var(--ihome-primary-color)
+  state-icon-unavailable-color: var(--ihome-primary-background-color)
+  # Einstellungsmöglichkeiten und Farben des Mini Media Players
+  mini-media-player-icon-color: var(--ihome-primary-color)
+  mini-media-player-accent-color: var(--ihome-primary-color)
+  mini-media-player-progress-height: var(--ihome-mini-media-player-progress-height)
+  # Papers Schieberegler Farben
+  paper-slider-knob-color: var(--ihome-primary-color)
+  paper-slider-knob-start-color: var(--ihome-primary-color)
+  paper-slider-pin-color: var(--ihome-primary-color)
+  paper-slider-active-color: var(--ihome-primary-color)
+  paper-slider-container-color: var(--ihome-disabled-color)
+  # Etiketten (Labels) Farben
+  label-badge-background-color: var(--ihome-divider-color)
+  label-badge-text-color: var(--ihome-primary-text-color)
+  label-badge-red: var(--ihome-primary-color)
+  label-badge-blue: var(--ihome-light-primary-color)
+  # Karten (Cards) Farben
+  ha-card-background: var(--ihome-ha-card-background)
+  paper-card-background-color: var(--ihome-ha-card-background)
+  paper-listbox-background-color: var(--ihome-primary-background-color)
+  # Schaltflächenfarben (Toggle button)
+  paper-toggle-button-checked-button-color: var(--ihome-primary-color)
+  paper-toggle-button-checked-bar-color: var(--ihome-light-primary-color)
+  paper-toggle-button-unchecked-button-color: var(--ihome-disabled-color)
+  paper-toggle-button-unchecked-bar-color: var(--ihome-primary-background-color)
+  # Switch Farben
+  switch-checked-color: var(--paper-toggle-button-checked-button-color)
+  switch-unchecked-button-color: var(--paper-toggle-button-unchecked-button-color)
+  switch-unchecked-color: var(--paper-toggle-button-unchecked-bar-color)
+  switch-unchecked-track-color: var(--paper-toggle-button-unchecked-bar-color)
+  # Table Farben
+  table-row-background-color: var(--ihome-divider-color)
+  table-row-alternative-background-color: var(--ihome-primary-background-color)
+  card-background-color: var(--ihome-primary-background-color)
+  # Animierte icons
+  weather-icon-clear-night: url("/local/community/ihome/bibliothek/icons_animiert/wetter/clear-night.svg")
+  weather-icon-cloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/cloudy.svg")
+  weather-icon-fog: url("/local/community/ihome/bibliothek/icons_animiert/wetter/fog.svg")
+  weather-icon-lightning: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning.svg")
+  weather-icon-lightning-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/lightning-rainy.svg")
+  weather-icon-partlycloudy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/partlycloudy.svg")
+  weather-icon-pouring: url("/local/community/ihome/bibliothek/icons_animiert/wetter/pouring.svg")
+  weather-icon-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/rainy.svg")
+  weather-icon-hail: url("/local/community/ihome/bibliothek/icons_animiert/wetter/hail.svg")
+  weather-icon-snowy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy.svg")
+  weather-icon-snowy-rainy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/snowy-rainy.svg")
+  weather-icon-sunny: url("/local/community/ihome/bibliothek/icons_animiert/wetter/sunny.svg")
+  weather-icon-windy: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy.svg")
+  weather-icon-windy-variant: url("/local/community/ihome/bibliothek/icons_animiert/wetter/windy-variant.svg")
+  weather-icon-exceptional: url("/local/community/ihome/bibliothek/icons_animiert/wetter/exceptional.svg")
+  # Schatten
+  ha-card-box-shadow: var(--ihome-ha-card-box-shadow)
+  ha-card-border-width: var(--ihome-ha-card-border-width)
+  # HACS
+  hacs-badge-color: var(--ihome-primary-color)
+  link-text-color: var(--ihome-disabled-color)
+  markdown-code-background-color: var(--ihome-divider-color)
+  google-blue-500: var(--ihome-primary-color)
+  accent-color: var(--ihome-light-primary-color)
+  hacs-chip-color: var(--ihome-primary-color)
+  # Neu
+  mdc-text-field-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-ink-color: var(--ihome-primary-text-color)
+  mdc-select-fill-color: var(--ihome-ha-card-background)
+  mdc-text-field-label-ink-color: var(--ihome-primary-color)
+  input-fill-color: var(--ihome-primary-color)
+  input-ink-color: var(--ihome-primary-text-color)
+  input-label-ink-color: var(--ihome-primary-text-color)
+  input-disabled-fill-color: var(--ihome-primary-background-color)
+  input-disabled-ink-color: var(--ihome-disabled-color)
+  input-disabled-label-ink-color: var(--ihome-disabled-color)
+  input-idle-line-color: var(--ihome-primary-background-color)
+  input-dropdown-icon-color: var(--ihome-disabled-color)
+  input-hover-line-color: var(--ihome-primary-color)
+  code-editor-background-color: var(--ihome-primary-background-color)
+  mdc-select-ink-color: var(--ihome-primary-text-color)
+  mdc-select-label-ink-color: var(--ihome-disabled-color)
+  mdc-select-idle-line-color: var(--ihome-primary-text-color)
+  mdc-select-dropdown-icon-color: var(--ihome-disabled-color)
+  mdc-select-hover-line-color: var(--ihome-primary-color)
+
+##########################################
