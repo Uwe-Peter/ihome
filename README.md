@@ -17,7 +17,7 @@ Dies ist ein benutzerdefiniertes Dashboard für Home Assistant. Es enthält Bild
 - **icons**: Enthält alle individuell erstellten Icons.
 - **icons_animiert**: Enthält alle animierten Icons.
 - **images**: Enthält Hintergrundbilder und Icons
-- **sonstiges**: Enthält DWD eben sonsiges.
+- **sonstiges**: Enthält DWD und eben sonsiges.
 - **sprachausgabe**: Enthält Vorlagen von mp3-Dateien und den Link um mp3 zu erstellen.
 
 ## Nutzung
