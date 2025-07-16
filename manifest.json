@@ -8,4 +8,10 @@
   "requirements": [],
   "dependencies": [],
   "codeowners": ["@uwe-peter"]
+  "resources": [
+    {
+      "type": "module",
+      "url": "/hacsfiles/ihome/cards/pollenprognose-card-ottes/pollenprognose-card-ottes.js"
+    }
+  ]
 }
