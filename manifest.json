@@ -7,7 +7,7 @@
   "frontend": true,
   "requirements": [],
   "dependencies": [],
-  "codeowners": ["@uwe-peter"]
+  "codeowners": ["@uwe-peter"],
   "resources": [
     {
       "type": "module",
