@@ -168,4 +168,4 @@ class PollenPrognoseCard  extends LitElement {
 }
 
 class HAPC extends PollenPrognoseCard {} ;
-customElements.define('pollenprognose-card', PollenPrognoseCard);
+customElements.define('ihome-pollenprognose-card', PollenPrognoseCard);
