@@ -2,24 +2,25 @@
 
 # pollenprognose-card-ottes
 
-A fork of the great work of [leahoswald's](https://github.com/leahoswald/) work on a card, but not useable with HACS. Here is the custom card, you could use.
+Ein Fork der großartigen Arbeit von [leahoswald](https://github.com/leahoswald/) an einer Karte, jedoch nicht mit HACS nutzbar. Hier ist die Custom Card, die du verwenden kannst.
 
-## Origins
+## Ursprung
 
-A Lovelace custom card for https://github.com/mampfes/hacs_dwd_pollenflug in Home Assistant based on the great work of https://github.com/isabellaalstrom/, https://github.com/isabellaalstrom/lovelace-pollenprognos-card and https://github.com/TekniskSupport.
+Eine Lovelace Custom Card für https://github.com/mampfes/hacs_dwd_pollenflug in Home Assistant, basierend auf der großartigen Arbeit von https://github.com/isabellaalstrom/, https://github.com/isabellaalstrom/lovelace-pollenprognos-card und https://github.com/TekniskSupport.
 
 ## Installation
 
-Not now, maybe future:The easiest way to install it is through HACS (Home Assistant Community Store), search for `Pollenprognose Card Ottes` in the Frontend section and install it (or another fork?).
+Noch nicht verfügbar, vielleicht in Zukunft: Der einfachste Weg zur Installation ist über HACS (Home Assistant Community Store). Suche im Frontend-Bereich nach **Pollenprognose Card Ottes** und installiere sie (oder einen anderen Fork?).
 
-For fow: Install this repo as Custom repo and search for `Pollen` on the frontent
+Für FOW: Installiere dieses Repository als Custom Repo und suche im Frontend nach **Pollen**.
 
-If you are NOT using HACS, you may download -ottes.js plus the images folder and put it into homeassistant_config_dir/www/community/lovelace-dwd-pollenprognose-card-ottes/ directory.
+Wenn du **KEIN HACS** nutzt, kannst du die Datei `-ottes.js` plus den Ordner `images` herunterladen und im Verzeichnis  
+`homeassistant_config_dir/www/community/lovelace-dwd-pollenprognose-card-ottes/` ablegen.
 
-## Example usage
-Pick the allergens you want to display.
+## Beispielhafte Nutzung  
+Wähle die Allergene, die du anzeigen möchtest.
 
-For ui-mode:
+Für den UI-Modus:
 ```yaml
 type: custom:pollenprognose-card-ottes
 region_desc: Nordhessen und hess. Mittelgebirge
@@ -35,7 +36,7 @@ allergens:
   - Ambrosia
 ```
 
-For yaml-mode:
+Für den YAML-Modus:
 ```yaml
 - type: custom:pollenprognose-card-ottes
   region_desc: Oberrhein und unteres Neckartal
@@ -51,18 +52,18 @@ For yaml-mode:
     - Ambrosia
 ```
 
-## Options
+## Optionen
 
-| Name | Type | Default | Description
+| Name | Type | Standard | Beschreibung
 | ---- | ---- | ------- | -----------
-| type | string | **Required** | `custom:pollenprognose-card-ottes`
-| region_desc | string | **Required** | Name of the region, is only used for display in header.
-| region_id | string | **Required** | The region id as [defined by DWD](https://opendata.dwd.de/climate_environment/health/alerts/Beschreibung_pollen_s31fg.pdf) (find Name from DWD Component and enter ID of it here)
-| allergens | list | **Required** | List of allergens for which you have sensors, defined at [hacs_dwd_pollenflug](https://github.com/mampfes/hacs_dwd_pollenflug)
-| title | boolean | **Optional** | Set to `false` to remove the heading from the card
-| show_state | boolean | **Optional** | Set to `false` if you don't want to show the state text under the images.
-| forecast | boolean | **Optional** | Set to `true` to see the forecast for tomorrow indicated with an additional smaller leaf.
-| filter_unknown | boolean | **Optional** | Set to `true` to only see actually active pollen.
+| type | string | **Erforderlich** | `custom:pollenprognose-card-ottes`
+| region_desc | string | **Erforderlich** | Name der Region, wird nur in der Kopfzeile angezeigt.
+| region_id | string | **Erforderlich** | Die Regions-ID, wie vom [defined by DWD](https://opendata.dwd.de/climate_environment/health/alerts/Beschreibung_pollen_s31fg.pdf)  (Name aus der DWD-Komponente suchen und ID hier eintragen).
+| allergens | list | **Erforderlich** | Liste der Allergene, für die du Sensoren hast, definiert bei [hacs_dwd_pollenflug](https://github.com/mampfes/hacs_dwd_pollenflug)
+| title | boolean | **Optional** | Auf `false` setzen, um die Überschrift der Karte zu entfernen.
+| show_state | boolean | **Optional** | Auf `false`e setzen, wenn der Status-Text unter den Bildern nicht angezeigt werden soll.
+| forecast | boolean | **Optional** | Auf `true` setzen, um die Prognose für morgen mit einem kleineren zusätzlichen Blatt anzuzeigen.
+| filter_unknown | boolean | **Optional** | Auf `true` setzen, um nur aktuell aktive Pollen anzuzeigen.
 
-### Example of the card with all allergens presented
+### Beispiel der Karte mit allen Allergenen dargestellt
 ![Screenshot2022-02-13_17-16-48](https://user-images.githubusercontent.com/1292551/153762269-214888ae-d2bb-445b-a90a-f4336cd303e1.png)
