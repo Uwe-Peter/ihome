@@ -11,7 +11,7 @@
   "resources": [
     {
       "type": "module",
-      "url": "/hacsfiles/ihome/cards/pollenprognose-card-ottes/pollenprognose-card-ottes.js"
+      "url": "/hacsfiles/ihome/cards/pollenprognose/dwd-pollenprognose-card-ottes.js"
     }
   ]
 }
