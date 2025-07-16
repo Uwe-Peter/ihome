@@ -3,7 +3,7 @@
   "name": "Bibliothek",
   "version": "1.0.0",
   "description": "Ein benutzerdefiniertes Dashboard für Home Assistant.",
-  "documentation": "https://github.com/dein_github_user/ihome",  // URL zur Dokumentation
+  "documentation": "https://github.com/dein_github_user/ihome",
   "frontend": true,
   "requirements": [],
   "dependencies": [],
@@ -15,3 +15,4 @@
     }
   ]
 }
+
