@@ -1,7 +1,7 @@
 {
   "name": "ihome",
   "content_in_root": false,
-  "domains": ["dashboard", "plugin"],
+  "domains": ["dashboard"],
   "filename": "bibliothek/dashboard.yaml",
   "render_readme": true,
   "version": "1.0.0",
